@@ -1,0 +1,22 @@
+logging:
+  pattern:
+    dateformat: dd-mm-YYYY hh:mm:ss
+  level:
+    web: debug
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/biblioteca
+    username: ada
+    password: Lovelace
+    driver-class-name: org.postgresql.Driver
+  data:
+    mongodb:
+      uri: mongodb+srv://ada:Lovelace@cluster0.3yztqlr.mongodb.net/biblioteca?retryWrites=true&w=majority;
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8090
